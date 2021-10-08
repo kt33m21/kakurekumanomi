@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/*基本css*/
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Shippori Mincho";
+  margin:auto;
+}
+
+img{
+  margin:20px;
+}
+
+.button{
+  display:block;
+  width:150px;
+  text-align:center;
+  padding:10px;
+  background-color:#222;
+  color:#fff;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+  transition:0.3s;
+}
+
+a:hover{
+  opacity:0.7;
+  transition:0.3s;
+}
+
+/*ページ内部*/
+
+/*ヘッダー*/
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  left:0;
+  top:0;
+  height:70px;
+  background-color:black;
+  color:#FFF;
+  width:50%;
+}
+
+.header-ttl{
+  font-size:25px;
+  font-weight:lighter;
+  padding-left:20px;
+}
+
+.header-nav-list{
+  display:flex;
+  padding-right:20px;
+}
+
+.header-nav-item{
+  padding-left:20px;
+}
+
+/*ファーストビュー*/
+
+.top-fv{
+  background-image:url(../img/firstview.png);
+  width:50%;
+  height:600px;
+  z-index: 10;
+  background-repeat: no-repeat;
+  margin-left:50%;
+  background-position: center;
+}
+
+/*トピックス*/
+
+.topics-main{
+  display:flex;
+}
+
+/*スタイルズ*/
+
+.styles-main{
+  background:linear-gradient(#222222,#ffffff);
+}
+
+.styles-main-ttl{
+  color:#ffffff;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.styles-main-contents{
+  display:grid;
+  grid-template-rows:500px 500px 500px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.styles-main-contents-item1{
+  grid-column:1/2;
+  grid-row:1/2;
+}
+
+.styles-main-contents-item2{
+  grid-column:2/3;
+  grid-row:1/2;
+}
+
+.styles-main-contents-item3{
+  grid-column:3/4;
+  grid-row:1/2;
+}
+
+.styles-main-contents-item4{
+  grid-column:1/2;
+  grid-row:2/3;
+}
+
+.styles-main-contents-item5{
+  grid-column:2/3;
+  grid-row:2/3;
+}
+
+.styles-main-contents-item6{
+  grid-column:3/4;
+  grid-row:2/3;
+}
+/*アバウト*/
+.about-main{
+  display:flex;
+  background-color:black;
+  color:white;
+}
+
+/*フッター*/
+.footer{
+  background-color:black;
+  color:white;
+  text-align: center;
+}
